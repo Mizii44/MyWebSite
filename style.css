@@ -1,0 +1,191 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  
+body {
+    background-color: #0e1a24;
+    font-family: 'Arial', sans-serif;
+    
+    text-align: justify;      
+}
+
+p {
+    font-size: 1.3vw;
+    color : blanchedalmond;
+}
+
+h1 {
+    font-family: 'FireplaceReg', 'Arial Black', 'sans-serif';
+}
+
+h2, h2 a {
+    color:  rgb(255, 97, 111);
+    font-family: 'CabinSketchReg', 'Arial Black', 'sans-serif';
+    font-size: 2.5vw;
+}
+
+.AccueilFlex {
+   
+}
+
+/* Gestion du bandeau latéral sticky des reseaux sociaux */
+.socialNetwork {    
+    float: right;
+    background-color: rgba(245, 186, 186, 0.1);
+    border-radius: 5px;
+    margin: 2%;
+    margin-top: 10%;
+    position: -webkit-sticky;
+    position: sticky;
+    top:37%;
+}
+
+.socialNetwork a {
+    text-decoration: none;
+}
+
+.socialNetwork img {
+    height: 50px;
+}
+
+.socialNetwork ul {
+    list-style-type: none;   
+}
+
+.socialNetwork li {
+     padding: 10px;
+}
+
+/* Gestion des ancres */
+#anchorHeader {
+    margin-top: 2%;
+}
+
+#presentation {
+    margin-top : 20%;
+}
+
+
+/* Personnalisation du header */    
+.header {
+    width: 100%;
+    min-width: 600px;
+    border-radius: 10px;
+    padding: 1%;
+    margin-top: 2%;
+    background-color: rgb(255, 97, 111);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;   
+}
+
+.titre {
+    font-size: 2.4vw;
+}
+
+/* Personnalisation du menu navbar */
+.navbar a {
+    text-decoration: none;
+    font-family: 'englebertregular', 'Comic sans MS', 'Arial', sans-serif;
+    color: black;
+    font-size: 1.5vw;
+}
+
+ .navbar a:hover {
+    text-shadow: 5px 5px 5px rgb(114, 43, 43);
+}
+
+.navbar ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar li {
+    list-style-type: none;
+    padding: 0.9vw;
+}
+    
+/* Personnalisation du bandeau Let's Talk Tea */
+.globalPresentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(245, 186, 186, 0.8);
+    padding: 1%;
+    margin: 7%;
+    border-radius: 10px;
+    width: auto;
+}
+
+.textPresentation p, .textPresentation h2{
+    text-align: center;
+    color: black;
+}
+
+.textPresentation h2 {
+    padding-bottom: 5%;
+}
+
+.photoPresentation {
+    height: auto;
+    width: 20%;
+    float: right;
+    border-radius: 100%;
+}
+
+/* Mise en forme des sections */
+section {
+    padding: 3%;
+    width: 95%;
+}
+
+section h2 {
+    line-height: 350%;
+}
+
+
+/* Personnalisation du footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(245, 186, 186, 0.1);
+    width: auto;
+}
+
+footer p, footer ul {
+    margin: 2%;
+    width: 50%;
+    list-style-type: none;
+}
+
+footer a {
+    color: blanchedalmond;
+}
+
+footer .weblink a {
+    color:blanchedalmond;
+    text-decoration: none;
+}
+
+footer .weblink a:hover {
+    text-decoration: underline;
+}
