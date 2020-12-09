@@ -1,0 +1,409 @@
+
+
+
+.blocTextFeuilles {
+    width: 99vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.blocFeuilles {
+    height: 100vh;
+}
+
+.blocFeuilles img {
+    position: absolute;
+}
+
+.blocText {
+    line-height: 15vh;
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    min-height: 240px;
+    /*height: 47%;
+    width: 33%;
+*/
+}
+
+.blocText p {
+    
+    opacity: 0;
+    color: white;
+    font-size: 5vw;
+    position: relative;
+    font-family: 'FireplaceReg', 'Comic sans MS', 'Arial', serif;
+}
+
+
+.Hello {
+    left : 14vw;
+    top: 1vh;
+    animation: animBlocText 3s ease-out 2s forwards;
+}
+
+.Emilie {
+    left : 5vw;
+    bottom : 1vh;
+    animation: animBlocText 4s ease-out 1.5s forwards;
+
+}
+
+.Emilie span {
+    font-family: 'CabinSketchBold', 'Comic sans MS', 'Arial', sans-serif;
+    font-size: 8vw;
+}
+
+.World {
+    left : 10vw;
+    bottom : 5vh;
+    animation: animBlocText 3s ease-out 2s forwards;
+
+}
+
+.arrowButton {
+    opacity: 0;
+    position: relative;
+    z-index : 9;
+    height: 10vh;
+    bottom: 6vh;
+    right: 45vw;
+    -webkit-filter: drop-shadow(5px 10px 5px rgb(0, 0, 0));
+    filter: drop-shadow(4px 5px 2px rgb(0, 0, 0));
+    animation: animArrow 3s ease-out 3.5s forwards;
+   }
+
+
+.shadowUn {
+    width : 32vw;
+    height: 52vh;
+    top : 15%;
+    left : 11%;
+    animation: animShadowUn 2s ease-out 2.5s forwards;
+}
+
+.shadowDeux {
+    width : 45vw;
+    height : 52vh;
+    top : 25%;
+    right : 10%;
+    animation: animShadowDeux 2s ease-out 2.5s forwards;
+}
+
+.leafUn {
+    z-index: 1;
+    width : 43vw;
+    height: 65vh;
+    top : -3%;
+    left : -5%;
+    animation: animLeafUn 2s ease-out 1.5s forwards;
+
+}
+
+.leafDeux {
+    z-index : 2;
+    top : 20%;
+    right : 38%;
+    width : 30vw;
+    height: 40vh;
+    transform: rotate(-20deg);
+    animation: animLeafDeux 1.5s ease-out 1.5s forwards;
+
+}
+
+.leafTrois {
+    z-index : 3;
+    top : -13%;
+    right : 30%;
+    width: 45vw;
+    height : 70vh;
+    animation: animLeafTrois 2s ease-out 1.5s forwards;
+
+}
+
+
+.flowerQuatre {
+    z-index : 4;
+    top : 18%;
+    right : 34%;
+    width : 15vw;
+    height : 45vh;
+    transform: rotate(-45deg);
+    animation: animFlower 2s ease-out 1.5s forwards;
+
+}
+
+.leafCinq {
+    z-index : 5;
+    top : -5%;
+    right : -3%;
+    width : 45vw;
+    height : 69vh;
+    animation: animLeafCinq 2s ease-out 1.5s forwards;
+
+}
+
+.leafSix {
+    z-index : 6;
+    top : 5%;
+    right : -8%;
+    width : 38vw;
+    height : 100vh;
+    transform: rotate(-8deg);
+    animation: animLeafSix 2s ease-out 1.5s forwards;
+}
+
+.leafSixBis {
+    z-index: 6;
+    width : 40vw;
+    height: 55vh;
+    transform: scaleX(-1) rotate(-45deg);
+    bottom : -10%;
+    right : -5%;
+    animation: animLeafSixBis 2s ease-out 1.5s forwards;
+
+}
+
+.leafSept {
+    z-index : 7;
+    bottom : -30%;
+    right : -3%;
+    width : 40vw;
+    height: 70vh;
+    animation: animLeafSept 2s ease-out 1.5s forwards;
+ 
+}
+
+.leafHuit {
+    z-index: 8;
+    bottom : -38%;
+    right : 25%;
+    width : 50vw;
+    height: 83vh;
+    transform: rotate(-3deg);
+    animation: animLeafHuit 2s ease-out 1.5s forwards;
+
+}
+
+.leafNeuf {
+    z-index: 9;
+    top : 23%;
+    left : 2%;
+    width : 20vw;
+    height: 30vh;
+}
+
+.leafDix {
+    z-index: 10;
+    bottom : -15%;
+    left : -5%;
+    width : 33vw;
+    height: 100vh;
+    transform: rotate(13deg);
+    animation: animLeafDix 2s ease-out 1.5s forwards;
+
+}
+
+.leafOnze {
+    z-index: 11; 
+    bottom : -20vh;
+    left : 0;
+    width : 40vw;
+    height : 50vh;
+    animation: animLeafOnze 2s ease-out 1.5s forwards;
+}
+
+@keyframes animArrow {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animBlocText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes animLeafUn {
+    0% {
+        transform: rotate(0);
+        left:-5%;
+    }
+
+    100% {
+        transform: rotate(-16deg);
+        left: -12%;
+    }
+
+}
+
+
+@keyframes animLeafDeux {
+    0% {
+        top: 20%;
+        right : 38%;
+        transform: rotate(-20);
+    }
+    
+    100% {
+        top: 0%;
+        right : 37%;
+        transform: rotate(-45deg);
+        
+    }
+}
+
+@keyframes animLeafTrois {
+    0% {
+        top: -13%;
+    }
+
+    100% {
+        top: -22%;
+
+    }
+}
+
+@keyframes animFlower {
+    0% {
+        top : 18%;
+        right : 34%;       
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        top : 8%;
+        right : 30%;
+        transform : rotate(-20deg);
+    }
+}
+
+
+@keyframes animLeafCinq {
+    0% {
+        transform: rotate(0);
+        right:-3%;
+    }
+
+    100% {
+        transform: rotate(12deg);
+        right: -12%;
+    }
+
+}
+
+
+@keyframes animLeafSix {
+    0% {
+        top : 5%;
+       transform: rotate(-8deg);
+    }
+
+    100% {
+        top : 6%;
+        transform: rotate(-9deg);
+    }
+}
+
+@keyframes animLeafSixBis {
+0% {
+    transform: scaleX(-1) rotate(-45deg);
+    bottom : -10%;
+    right : -5%;
+}
+100% {
+    transform: scaleX(-1) rotate(-40deg);
+    right : -12%;
+}
+
+}
+
+@keyframes animLeafSept {
+    0% {
+        bottom : -30%;
+        right : -3%;
+    }
+    100% {
+        transform: rotate(-3deg);
+    }
+
+}
+
+@keyframes animLeafHuit {
+    0% {
+        bottom : -38%;
+    }
+
+    100% {
+        bottom : -55%;
+    }
+}
+
+
+@keyframes animLeafDix {
+    0% {
+        transform: rotate(13deg);
+    }
+    
+    100% {
+        transform: rotate(9deg);
+
+    }
+}
+
+@keyframes animLeafOnze {
+    0% {
+        transform: rotate(0);
+        left : 0;
+    }
+
+    100% {
+        transform: rotate(-5deg);
+        left : -4%;
+    }
+
+}
+
+
+@keyframes animShadowUn {
+0% {
+    top : 15%;
+    left : 11%;
+
+}
+100% {
+    left : 10%;
+}
+}
+
+@keyframes animShadowDeux {
+0% {
+    right : 10%;
+}
+100% {
+    right : 8%;    
+}
+}
+

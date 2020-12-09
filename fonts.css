@@ -1,0 +1,64 @@
+
+@font-face {
+    font-family: 'CabinSketchReg';
+    src: url('fonts/CabinSketch/cabinsketch-regular-webfont.woff2') format('woff2'),
+         url('fonts/CabinSketch/cabinsketch-regular-webfont.woff') format('woff'),
+         url('fonts/CabinSketch/CabinSketch-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CabinSketchBold';
+    src: url('fonts/CabinSketch/cabinsketch-bold-webfont.woff2') format('woff2'),
+         url('fonts/CabinSketch/cabinsketch-bold-webfont.woff') format('woff'),
+         url('fonts/CabinSketch/CabinSketch-Bold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'FireplaceReg';
+    src: url('fonts/fireplace/Fireplace.woff2') format('woff2'),
+         url('fonts/fireplace/Fireplace.woff') format('woff'),
+         url('fonts/fireplace/Fireplace.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'bubbler_oneregular';
+    src: url('fonts/BubblerOne/BubblerOne-Regular.ttf') format('ttf'),
+         url('fonts/BubblerOne/bubblerone-regular-webfont.woff2') format('woff2'),
+         url('fonts/BubblerOne/bubblerone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'englebertregular';
+    src: url('fonts/Englebert/Englebert-Regular.ttf') format('ttf'),
+         url('fonts/Englebert/englebert-regular-webfont.woff2') format('woff2'),
+         url('fonts/Englebert/englebert-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'painter_Rg';
+    src: url('fonts/Painter/Painter.ttf') format('ttf'),
+         url('fonts/Painter/painter.woff2') format('woff2'),
+         url('fonts/Painter/painter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
