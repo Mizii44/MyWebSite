@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="blocIntro.css">
-    <title>Document</title>
+    <title>Emilie GIRE Website</title>
 </head>
 <body>
-    <!--Ensemble de la page d'accueil du site en display FlexBlox-->
-    <div class=AccueilFlex>
+    <!--Ensemble de la page d'accueil du site en Français-->
+    <div id=accueilFr>
         
         <!--Intro du site avec animations des feuilles-->
         <div class="blocTextFeuilles">
@@ -45,7 +45,7 @@
         <!--Création d'un objet non sticky pour permettre les liens d'ancrage-->
         <div id="anchorHeader"></div>
         <!--En-tête bandeau sticky du site-->
-    <header id="accueil" class="header">
+    <header class="header">
          <!--Titre du site qui apparaît dans le bandeau-->
            <h1 id="titre" class="titre"> Hello Emilie 's World !</h1>
          <!--Menu navbar du site-->
@@ -56,6 +56,7 @@
                 <li> <a href="index.html#parcours" title="Accroche ta ceinture..." alt="Parcours Emilie Giré">Mon parcours</a></li>
                 <li><a href="index.html#experiences" title="Soyons sérieux 2 minutes" alt="Expérience Emilie Giré">Mon expérience</a></li>
                 <li><a href="jeux.html" title="Quelques jeux par ici !" alt="Jeux Développement Web Emilie Giré">Let's Play!</a></li>
+                <li><a href="form_contact.html" title="Contactez-moi !" alt="Contact Emilie Giré">Contact</a> </li>
             </ul>
         </nav>
     </header> 
@@ -74,18 +75,20 @@
         </ul>
     </aside>
     
+    
+    
     <!--On attaque le corps du site avec plusieurs sections-->
-
+    
     <!--Pour chaque nouvelle section, on crée un objet ancre qui permettra de lier
         la navbar à la section, sans être géné par la hauteur du bandeau de titre-->
-
-    <!--Première section : intro Let's talk tea-->
-    <section class="globalPresentation">
-
-        <div class="textPresentation">    
-            <h2>Let's talk tea !</h2>    
-            <p>
-                Eh oui ... au risque de me mettre le monde du développement à dos, je n'aime pas
+        
+        <!--Première section : intro Let's talk tea-->
+        <section class="globalPresentation">
+            
+            <div class="textPresentation">    
+                <h2>Let's talk tea !</h2>    
+                <p>
+                    Eh oui ... au risque de me mettre le monde du développement à dos, je n'aime pas
                 le café !<br>
             
                 Je préfère le thé ! Mais pas d'inquiétudes, mon amour pour JAVA et javascript
@@ -95,52 +98,60 @@
                 Enfin, trève de bavardage ! Je vous laisse découvrir... mon Monde...
             </p>
         </div>
-                
-            <img class="photoPresentation" src="images/moi-enjava_resize.jpg">
-
-            <div id="presentation"></div>
-
+        
+        <img class="photoPresentation" src="images/moi-enjava_resize.jpg">
+        
     </section>
     
+    <div id="presentation"></div>
+    
+    <!--Création du bouton retour vers le haut-->
+    <div class="topButton">
+        <a href="index.html#anchorHeader">
+        <img title="Retour en haut du site" src="images/arrowTop.png" alt="retour haut"></a> 
+</div>
     <!-- Deuxième section : présentation plus poussée -->
-<section class="presentation">
-    <h2> Présentation </h2>
+    <section class="presentation">
+        <h2> Présentation </h2>
         <p>
-        Bonjour, je suis un paragraphe !
-        <br> Comment allez-vous ?
+            Bonjour, je suis un paragraphe !
+            <br> Comment allez-vous ?
         </p>
         
         <p>
-        Bon, l'idée n'étant pas de faire une page entière de test,
-        je vais m'arrêter là et commencer à me présenter !
+            Bon, l'idée n'étant pas de faire une page entière de test,
+            je vais m'arrêter là et commencer à me présenter !
         </p>
         <p>
-        Je m'appelle Emilie Liatard ! Enfin ... ça c'était avant que je me marie !
-        <br> Je m'appelle donc maintenant Emilie Giré (c'est cool, c'est plus court et plus facile à épeler !).
+            Je m'appelle Emilie Liatard ! Enfin ... ça c'était avant que je me marie !
+            <br> Je m'appelle donc maintenant Emilie Giré (c'est cool, c'est plus court et plus facile à épeler !).
         </p>
         <p>
-        <br>Nous sommes installés à Janzé,
-        <br>petit bourg de caractère,
-        <br>plein de charme,
-        <br>où il fait bon vivre...
+            <br>Nous sommes installés à Janzé,
+            <br>petit bourg de caractère,
+            <br>plein de charme,
+            <br>où il fait bon vivre...
         </p>
         <p>
-        <br>... Oui bon, on va pas se mentir, il y a surtout un énorme Centrakor !
-        <p><br>
-            Je suis Nantaise d'origine, mais la Savoie a aussi une place particulière dans mon coeur car mon papa y est originaire.
-        <br> J'ai un chat, un lapin... mais je suis surtout une maman comblée.
+            <br>... Oui bon, on va pas se mentir, il y a surtout un énorme Centrakor !
+            <p><br>
+                Je suis Nantaise d'origine, mais la Savoie a aussi une place particulière dans mon coeur car mon papa y est originaire.
+                <br> J'ai un chat, un lapin... mais je suis surtout une maman comblée.
+                
+                <br> J'ai fais mes études à Angers, puis suis venue sur Janzé pour le travail.
+                <br> Mais scroll un peu plus bas pour voir, tu en sauras plus sur mon parcours ;-).
+            </p>    
+        </p>
         
-            <br> J'ai fais mes études à Angers, puis suis venue sur Janzé pour le travail.
-            <br> Mais scroll un peu plus bas pour voir, tu en sauras plus sur mon parcours ;-).
-        </p>    
-    </p>
+    </section>
+    
+    <div id="parcours"></div>
+   
 
-</section>
-
-    <!-- Troisième section : Mon parcours avant l'ENI -->
-    <section class="parcours" id="parcours">
-        <h2>Mon parcours : accroche ta ceinture...</h2>
-        <p> A la base, j'ai un parcours plutôt classique :
+<!-- Troisième section : Mon parcours avant l'ENI -->
+<section class="parcours">
+    <h2>Mon parcours : accroche ta ceinture...</h2>
+    <p> A la base, j'ai un parcours plutôt classique :
     
             un BAC Général Scientifique,
             <br> puis une classe préparatoire pour devenir Vétérinaire (rien que ça !)...
@@ -201,17 +212,19 @@
         <p>
             J'ai toujours aimé créer du contenu, et du joli.
             <br> Ce qui peut expliqué ma dernière passion en date : la couture.
-            <br> Partir de rien, un bout de tissu, pour en faire quelquechose de beau, et d'utile (a part pour les nudistes,
-            un vêtement reste un besoin primaire).
+            <br> Partir de rien, un bout de tissu, pour en faire quelquechose de beau, et d'utile.
+            <br>
             <br> Pour moi, le boulot du développeur s'apparente également à cela : faire du beau (interface graphique) et de
             l'utile
-            (la majorité des entreprises ont aujourd'hui un site internet, rien que pour gagner en visibilité - même les nudistes ;-) ).
+            (la majorité des entreprises ont aujourd'hui un site internet, rien que pour gagner en visibilité).
     
         </p>
     
     </section>
 
-    <section class="experiences" id="experiences">
+    <div id="experiences"></div>
+
+    <section class="experiences">
         <h2>Mes expériences en informatique (un petit peu quand même !)</h2>
     
         <p>
@@ -243,7 +256,8 @@
 
 
   
-
+<!-- ******************************************** -->
+<!-- Footer -->
 
 <footer>
 
