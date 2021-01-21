@@ -18,40 +18,103 @@ html {
   
 body {
     background-color: #0e1a24;
-    font-family: 'Arial', sans-serif;
-    
+    font-family: 'Arial', sans-serif;   
     text-align: justify;      
 }
 
-p {
-    font-size: 1.3vw;
+#accueilFr {
+    display:flex;
+    flex-direction: column;
+}
+
+p, .portfolio_page ul {
+    font-size: calc(10px + 1vw);
+    padding: 2%;
     color : blanchedalmond;
 }
 
 h1 {
     font-family: 'FireplaceReg', 'Arial Black', 'sans-serif';
+    color: rgb(51, 0, 11);
 }
 
 h2, h2 a {
     color:  rgb(255, 97, 111);
-    font-family: 'CabinSketchReg', 'Arial Black', 'sans-serif';
-    font-size: 2.5vw;
+    font-family: 'abelRegular', 'Arial Black', 'sans-serif';
+    font-size: calc(15px + 2.5vw);
 }
 
-.AccueilFlex {
-   
+/* Personnalisation du header */    
+.header {
+width: 100%;
+min-width: 250px;
+border-radius: 0;
+padding: 1%;
+background-color: rgba(255, 97, 111, 0.9);
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
-/* Gestion du bandeau latéral sticky des reseaux sociaux */
+.titre {
+font-size: calc(12px + 2.4vw);
+margin-right: 5%;
+}
+
+.titreContact {
+display: flex;
+flex-direction: row;
+width: 100%;
+align-items: center;
+}
+
+.titreContact a:hover {
+font-weight: bold;
+font-size: calc(14px + 1.8vw);
+}
+
+/* Personnalisation du menu navbar */
+
+.open-btn {
+    display: none;
+}
+
+
+.navbar_container a, .titreContact a {
+text-decoration: none;
+font-family: 'abelRegular', 'Comic sans MS', 'Arial', sans-serif;
+color: black;
+font-size: calc(14px + 2vw);
+}
+
+
+.navbar_container a:hover {
+text-shadow: 5px 5px 5px rgb(114, 43, 43);
+}
+
+
+.navbar, .navbar_responsive {
+padding-left: 0;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+
+.navbar li, .navbar_responsive li {
+list-style-type: none;
+padding: 0.9vw;
+cursor: pointer;
+}
+
+/* Création du bandeau des réseaux sociaux */
 .socialNetwork {    
-    float: right;
-    background-color: rgba(245, 186, 186, 0.1);
+    background-color: rgba(146, 138, 138, 0.185);
     border-radius: 5px;
-    margin: 2%;
-    margin-top: 10%;
-    position: -webkit-sticky;
-    position: sticky;
-    top:37%;
+    margin: 13% 2% 8% 2%;
+  
 }
 
 .socialNetwork a {
@@ -59,7 +122,8 @@ h2, h2 a {
 }
 
 .socialNetwork img {
-    height: 50px;
+    height: 5vh;
+    
 }
 
 .socialNetwork ul {
@@ -70,105 +134,185 @@ h2, h2 a {
      padding: 10px;
 }
 
-/* Gestion des ancres */
-#anchorHeader {
-    margin-top: 2%;
-}
-
-#presentation {
-    margin-top : 20%;
-}
-
-
-/* Personnalisation du header */    
-.header {
-    width: 100%;
-    min-width: 600px;
-    border-radius: 10px;
-    padding: 1%;
-    margin-top: 2%;
-    background-color: rgb(255, 97, 111);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+/* Formulaire de contact */
+.formulaire {
+    margin: 5% 0 10% 28%;
+    padding-bottom: 2.5%;
+    background-color:rgba(245, 186, 186, 0.1);
+    box-shadow: 0px 0px 80px rgba(245, 186, 186, 0.5);
+    width: 50vw;
     display: flex;
-    justify-content: space-between;   
-}
-
-.titre {
-    font-size: 2.4vw;
-}
-
-/* Personnalisation du menu navbar */
-.navbar a {
-    text-decoration: none;
-    font-family: 'englebertregular', 'Comic sans MS', 'Arial', sans-serif;
-    color: black;
-    font-size: 1.5vw;
-}
-
- .navbar a:hover {
-    text-shadow: 5px 5px 5px rgb(114, 43, 43);
-}
-
-.navbar ul {
-    padding-left: 0;
-    display: flex;
-    flex-direction: row;
-}
-
-.navbar li {
-    list-style-type: none;
-    padding: 0.9vw;
-}
-    
-/* Personnalisation du bandeau Let's Talk Tea */
-.globalPresentation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+}
+
+.formulaire h2 {
+    padding: 4% 0 8% 0;
+}
+
+.formtext {
+   width: 40vw;
+}
+
+/*---------------------*/
+/* Gestion des ancres */
+/*---------------------*/
+#anchorHeader {
+    margin-top: 0%;
+}
+#parcours, #experiences {
+    margin-bottom: 18%;
+}
+#presentation {
+    margin-bottom : 13%;
+}
+/*---------------------*/
+
+/* Personnalisation du bandeau Let's Talk Tea */
+.globalIntro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     background-color: rgba(245, 186, 186, 0.8);
     padding: 1%;
-    margin: 7%;
+    margin: 6% 7% 5% 7%;
     border-radius: 10px;
     width: auto;
 }
 
-.textPresentation p, .textPresentation h2{
+.textIntro p, .textIntro h2{
     text-align: center;
     color: black;
+    padding: 5% 0 5% 0;
 }
 
-.textPresentation h2 {
-    padding-bottom: 5%;
+.textIntro h2 {
+    font-family: 'CabinSketchReg', 'abelRegular', 'Arial', sans-serif;
+    
+    line-height: 0;
+
 }
 
-.photoPresentation {
+.photoIntro {
     height: auto;
     width: 20%;
     float: right;
     border-radius: 100%;
 }
 
+.textIntro a {
+    text-decoration: none;
+    color:black;
+    text-shadow: 1px 2px 8px rgb(97, 42, 42);
+}
+
+.textIntro span {
+    font-style: italic;
+    font-family: 'Arial serif', 'sans-serif';
+}
+
+
+
 /* Mise en forme des sections */
 section {
-    padding: 3%;
-    width: 95%;
+    padding: 0% 3% 5% 3%;
+    width: 100%;
 }
 
 section h2 {
-    line-height: 350%;
+    line-height: 240%;
+    padding: 5% 0 5% 0;
+
+}
+
+.logos_sections {    
+    width : 10vw;
+    height: auto;
+    float : right;
+    padding: 2%;
+}
+
+.logo_Agrocampus {
+    width : 15vw;
+}
+
+.presentation, .parcours, .experiences {
+    background-color:rgba(245, 186, 186, 0.1);
+    box-shadow: 0px 0px 80px rgba(245, 186, 186, 0.5);
+    margin: 0 10% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: auto;
+    }
+
+.experiences {
+    margin-bottom: 12%;
+}    
+
+.exp_container_global {
+    display: flex;
+    flex-flow : row wrap;
+    justify-content: center;
+}
+
+.exp_container {
+    display: flex;
+    background-color: rgb(0,0,0);
+/*     rgb(245, 97, 111) */
+    height : 200px;
+    width: 200px;
+    margin : 2%;
+    border-radius: 50%;
+    box-shadow: inset 3px 5px 10px rgb(255, 255, 255);
+
+}
+
+.exp_container_global a {
+    text-decoration: none;
+    color: blanchedalmond;
+    margin : auto;
+    text-align: center;
+}
+    
+ .exp_container h3 {   
+    padding: 5%;
+    
+}
+
+.exp_container:hover {
+    text-shadow: 1px 2px 10px rgb(255, 255, 255);
+    -webkit-filter: drop-shadow(1px 1px 20px  rgb(255, 255, 255));
+    filter: drop-shadow(1px 1px 20px rgb(255, 255, 255));
+}
+
+/* Gestion du bouton latéral sticky pour retourner vers le haut */
+
+.topButton {
+    float: right;
+    border-radius: 5px;
+    margin-right: 2%;
+    margin-top: 20%;
+    position: -webkit-sticky;
+    position: sticky;
+    top:80%;
+       
+}
+
+.topButton img {
+    
+    height: 8vh;
+    padding: 10px;
 }
 
 
 /* Personnalisation du footer */
-
 footer {
     display: flex;
-    justify-content: space-around;
     background-color: rgba(245, 186, 186, 0.1);
-    width: auto;
+    align-items: center;
+    margin-top : 4%;  
 }
 
 footer p, footer ul {
@@ -182,10 +326,247 @@ footer a {
 }
 
 footer .weblink a {
-    color:blanchedalmond;
     text-decoration: none;
 }
 
 footer .weblink a:hover {
     text-decoration: underline;
+}
+
+footer .weblink p {
+    text-decoration: underline;
+}
+
+footer .weblink, footer .mentleg {
+    width: 100%;
+}
+
+.beforeimagetest_smalldevices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2% 0 5% 0;
+}
+
+.beforeimagetest_smalldevices .before img, .beforeimagetest_smalldevices .after img{
+    width: 40vw;
+}
+
+.portfolio_page h2 {
+    padding: 1%;
+}
+
+.picMakeover h3, .picMakeover h4 {
+    padding : 0 0 2% 4%;
+    color:lightcoral;
+}
+
+
+.portfolio_page a:link, .portfolio_page a:visited {
+    color:lightcoral;
+}
+
+.sewingProjects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.sewingProjects .horizontal_pic {
+    width: 40vw;
+    height: auto;
+    padding: 2%;
+}
+
+.sewingProjects .vertical_pic {
+    width: 20vw;
+    padding : 2%;
+}
+
+.sendingMail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email_sent {
+    font-size: calc(15px + 2vw);
+    color: rgb(255, 97, 111);
+    font-family: 'abelRegular', 'Arial Black', 'sans-serif';
+
+}
+
+.button_back {
+    font-family: 'abelRegular', 'Arial Black', 'sans-serif';
+    font-size:calc(12px + 1vw);
+    color :rgb(0, 0, 0);
+    background-color: rgb(255, 97, 111);
+    width: 7%;
+    min-width: 70px;
+    height: auto;
+    padding: 0.5%;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+
+
+/**********************************************************/
+/**********************************************************/
+/**********************MEDIAQUERIES************************/
+/**********************************************************/
+/**********************************************************/
+
+@media screen and (max-width: 900px) {
+
+    .beforeimagetest {
+        display: none;
+    }
+
+    .picMakeover h3 {
+        display: none;
+    }
+
+    .logos_sections {
+        display : none;
+    }
+   
+    .navbar {
+        display: none;
+    }
+
+    .socialNetwork {
+        position: static;
+        text-align: center;
+    }
+
+    .socialNetwork img {
+        width: 6vw;
+        height: auto;
+    }
+
+    .socialNetwork ul {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+    }
+    
+    /* Création du menu navbar pour les petits écrans */
+      
+        
+    .navbar_responsive {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+
+
+    .titreContact {
+        justify-content: space-between;
+    }
+
+    /* Création du bouton menu pour les petits écrans */
+             /* cursor pointer : pour avoir une zone cliquable */
+            .open-btn{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width:5vw;
+            min-width: 35px;
+            height: 50px;
+            margin-right: 2%;
+            cursor: pointer;
+          }
+
+          .open-btn .open-btn-bar{
+            background-color:black;
+            height: 5px;
+            width: 100%;
+        
+          }
+          .close-btn{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            width: 30px;
+            height: 30px;
+            transform: rotate(45deg);
+            cursor: pointer;
+          }
+
+          .close-btn .close-btn-bar{
+            background-color:white;
+            height: 5px;
+            width: 100%;
+          }
+          
+          .close-btn-bar-rotate{
+            transform: rotate(90deg);
+            margin-bottom: -5px;
+          }
+     
+}
+
+@media screen and (min-width: 900px) {
+
+/* Gestion du bandeau latéral sticky des reseaux sociaux */
+.socialNetwork {    
+    float: right;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30%;
+}
+
+.navbar_container {
+    width: 100%;
+}
+
+.navbar_container a, .titreContact a {
+    font-size: 1.5vw;
+}
+
+p, .portfolio_page ul {
+    font-size: max(1.4em);
+}
+
+.navbar_responsive {
+    display: none;
+}
+
+.navbar {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.beforeimagetest_smalldevices {
+    display: none;
+}
+
+.pieds {
+    margin : 2% 30% 15% 30%;    
+}
+
+.oie {
+    margin : 5% 30% 2% 35%;
+}
+
+.oie img {
+    width: 30vw;
+}
+
+.pieds img {
+    width: 40vw;
+}
+
+
+
 }

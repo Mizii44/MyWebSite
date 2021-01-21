@@ -1,9 +1,33 @@
 
+@media screen and (max-width: 900px), (orientation : portrait) {
+    .blocTextFeuilles {
+        display: none;
+    }
 
+    .blocIntroSmallScreen {
+        height : 100%;
+        overflow: hidden;
+        text-align: center;
+
+    }
+
+    .blocIntroSmallScreen img {
+        width: 30vw;
+        min-width: 25vw;
+        margin : 0%;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+
+    .blocIntroSmallScreen {
+        display: none;
+    }
 
 .blocTextFeuilles {
-    width: 99vw;
-    height: 100vh;
+    width: 100vw;
+    height: auto;
     position: relative;
     overflow: hidden;
     
@@ -23,9 +47,6 @@
     top: 37%;
     left: 35%;
     min-height: 240px;
-    /*height: 47%;
-    width: 33%;
-*/
 }
 
 .blocText p {
@@ -35,6 +56,7 @@
     font-size: 5vw;
     position: relative;
     font-family: 'FireplaceReg', 'Comic sans MS', 'Arial', serif;
+    padding: 0;
 }
 
 
@@ -67,12 +89,12 @@
     opacity: 0;
     position: relative;
     z-index : 9;
-    height: 10vh;
+    width: 5vw;
     bottom: 6vh;
     right: 45vw;
-    -webkit-filter: drop-shadow(5px 10px 5px rgb(0, 0, 0));
+    -webkit-filter: drop-shadow(4px 5px 2px rgb(0, 0, 0));
     filter: drop-shadow(4px 5px 2px rgb(0, 0, 0));
-    animation: animArrow 3s ease-out 3.5s forwards;
+    animation: animArrow 2s ease-out 3.5s forwards;
    }
 
 
@@ -219,21 +241,10 @@
     0% {
         opacity: 0;
     }
-    10% {
-        opacity: 1;
-    }
-    30% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    70% {
-        opacity: 0;
-    }
     100% {
         opacity: 1;
     }
+    
 }
 
 @keyframes animBlocText {
@@ -407,3 +418,4 @@
 }
 }
 
+}
